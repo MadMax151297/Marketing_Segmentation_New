@@ -307,8 +307,8 @@ shinyServer(function(input, output){
                     groups = classif1,
                     ellipse = TRUE,
                     circle = TRUE,
-                   labels.size = 18,
-                   varname.size=18)
+                   labels.size = 9,
+                   varname.size=9)
       
       g <- g + scale_color_discrete(name = '')
       g <- g + theme(legend.direction = 'horizontal',
