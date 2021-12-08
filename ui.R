@@ -69,7 +69,7 @@ shinyUI(fluidPage(
                            plotOutput("plotpca",height = 400, width = 500),tableOutput('seg_count'),dataTableOutput("summary")),
                           
                 
-                tabPanel("Plot",h3("Segments Plot"), plotOutput("plot",height = 700, width = 840)),
+                tabPanel("Plot",h3("Segments Plot"), plotOutput("plot",height = 2100, width = 2520)),
                 tabPanel("Data Segment",br(),
                          downloadButton('downloadData4', 'Download Segmentation file (Works only in browser)'), br(),br(),
                          dataTableOutput("table"),tags$head(tags$style("tfoot {display: table-header-group;}")))
