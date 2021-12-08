@@ -302,8 +302,8 @@ shinyServer(function(input, output){
       # plot(data.pca, type = "l"); abline(h=1)    
       
       g <- ggbiplot(data.pca,
-                    obs.scale = 1,
-                    var.scale = 1,
+                    obs.scale = 3,
+                    var.scale = 3,
                     groups = classif1,
                     ellipse = TRUE,
                     circle = TRUE)
