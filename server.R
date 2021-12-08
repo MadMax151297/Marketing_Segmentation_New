@@ -302,14 +302,14 @@ shinyServer(function(input, output){
       # plot(data.pca, type = "l"); abline(h=1)    
       
       g <- ggbiplot(data.pca,
-                    obs.scale = 3,
-                    var.scale = 3,
+                    obs.scale = 2,
+                    var.scale = 2,
                     groups = classif1,
                     ellipse = TRUE,
                     circle = TRUE,
-                   labels.size = 9,
-                   varname.size=9,
-                   varname.abbrev=TRUE)
+                   labels.size = 5,
+                   varname.size=5,
+                   varname.abbrev=FALSE)
       
       g <- g + scale_color_discrete(name = '')
       g <- g + theme(legend.direction = 'horizontal',
